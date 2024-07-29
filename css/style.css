@@ -2,88 +2,76 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    /* Estilos básicos para el cuerpo y la etiqueta html, sin márgenes ni padding y con una fuente sans-serif */
+    background: #f4f4f4; /* Color de fondo general */
 }
 
 header {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: center;
-    /* Estilos para la cabecera, con fondo negro, texto blanco, algo de padding y texto centrado */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .menu ul {
     list-style: none;
     padding: 0;
-    /* Estilos para la lista del menú, sin viñetas ni padding */
+    margin: 0;
 }
 
 .menu ul li {
     display: inline;
-    margin-right: 10px;
-    /* Estilos para los elementos de la lista, mostrados en línea con margen a la derecha */
+    margin-right: 20px;
 }
 
 .menu ul li a {
     color: #fff;
     text-decoration: none;
-    /* Estilos para los enlaces del menú, con texto blanco y sin subrayado */
+}
+
+.section {
+    padding: 60px 20px; /* Espaciado general para cada sección */
+    margin-top: 50px; /* Margen superior para evitar solapamiento con el menú */
 }
 
 .media {
-    background-color: #ccc;
-    padding: 20px;
+    background-color: #ddd; /* Fondo para destacar la sección */
     text-align: center;
-    /* Estilos para la sección de medios, con fondo gris, padding y texto centrado */
 }
 
-.description, .reviews {
+.description {
+    background-color: #fff;
+    text-align: left;
     padding: 20px;
-    text-align: center;
-    /* Estilos compartidos para las secciones de descripción y reseñas, con padding y texto centrado */
+    margin: 20px 0; /* Espacio entre secciones */
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-around;
 }
 
 .review {
-    border: 1px solid #000;
-    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
     padding: 10px;
-    display: inline-block;
-    /* Estilos para cada caja de reseña, con bordes, márgenes, padding y mostrado como bloque en línea */
+    width: 30%; /* Ajuste del ancho de cada reseña */
 }
 
 footer {
     text-align: center;
+    padding: 20px 0;
+    position: relative;
     margin-top: 20px;
-    /* Estilos para el pie de página, con texto centrado y un margen superior */
+    background: #333;
 }
 
 footer button {
-    padding: 10px 20px;
-    background-color: #008000;
-    color: white;
+    background-color: #008000; /* Color llamativo para el botón */
+    color: #fff;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
-    /* Estilos para el botón en el pie de página, con padding, fondo verde, texto blanco, sin bordes y cursor de puntero */
-}
-
-.video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;  /* Controla la altura del video para que cubra solo la vista inicial */
-    z-index: -1;  /* Asegura que el video quede detrás de todo el contenido */
-    overflow: hidden;
-}
-
-.video-background video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
 }

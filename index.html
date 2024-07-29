@@ -2,21 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Título de la Web</title>
+    <title>TodoDespedidas</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-    <div class="video-background">
-        <video autoplay loop muted playsinline>
-            <source src="path/to/your/video.mp4" type="video/mp4">
-            Tu navegador no soporta video HTML5.
-        </video>
-    </div>
     <header>
-        <!-- Inclusión del menú desde un archivo externo -->
-        <div id="menuContainer"></div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <h1>TodoDespedidas</h1>
     </header>
     <section class="media">
         <p>Videos o imágenes de fiestas de despedidas, actividades, etc.</p>
@@ -24,13 +18,15 @@
     <section class="description">
         <p>Descripción de lo que ofrecemos y cómo pueden ahorrar tiempo y dinero con nosotros.</p>
     </section>
-    <!-- Inclusión de las reseñas desde un archivo externo -->
-    <div id="reviewsContainer"></div>
+    <div class="reviews">
+        <div class="review">Comentarios y reseñas</div>
+        <div class="review">Comentarios y reseñas</div>
+        <div class="review">Comentarios y reseñas</div>
+    </div>
     <footer>
-        <!-- Inclusión del pie de página desde un archivo externo -->
-        <div id="footerContainer"></div>
+        <button type="button">Organiza en 10 minutos la despedida de tu amigo o familiar</button>
     </footer>
-
     <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
