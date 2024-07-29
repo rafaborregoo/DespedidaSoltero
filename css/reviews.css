@@ -1,0 +1,66 @@
+/* reviews.css */
+.review-carousel {
+    display: flex;
+    overflow: hidden;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Necesario para posicionar los botones */
+}
+
+.review-slide {
+    white-space: nowrap; /* Asegura que todos los elementos del slide estén en una sola línea */
+    transition: transform 0.3s ease; /* Suaviza la transición de los slides */
+}
+
+.review-item {
+    display: inline-block;
+    width: 200px; /* Ancho de cada reseña */
+    height: 200px; /* Altura de cada reseña */
+    margin: 10px;
+    background-color: #f0f0f0; /* Color de fondo secundario para cada reseña */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil para 3D effect */
+    text-align: center; /* Alineación del texto */
+    vertical-align: top; /* Alinea el contenido desde arriba */
+}
+
+.review-item:hover {
+    background-color: #e0e0e0; /* Cambia el fondo al pasar el ratón */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.carousel-button:hover {
+    background-color: #0056b3; /* Un tono más oscuro para el hover */
+    transform: scale(1.1);
+}
+
+.carousel-button:focus {
+    outline: none; /* Remueve el contorno que algunos navegadores añaden al enfocar */
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}

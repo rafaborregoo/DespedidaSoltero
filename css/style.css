@@ -1,72 +1,44 @@
+/* style.css */
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #FFFFFF; /* Blanco para el fondo general */
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 15px 20px; /* Ajuste del padding para mejor visualización */
-    text-align: center; /* Alineación central del título */
+    background-color: #007BFF; /* Azul Eléctrico para el encabezado */
+    color: #FFFFFF; /* Texto blanco para contraste */
+    padding: 15px 20px;
+    text-align: center;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
 
-.sidebar {
-    height: 100%;
-    width: 0; /* Menú inicialmente oculto */
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidebar a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #ccc;
-    display: block;
-}
-
-.sidebar a:hover {
-    color: #fff;
-}
-
-.menu-icon {
-    font-size: 30px;
-    cursor: pointer;
-}
-
 .media, .description, .reviews {
     padding: 20px;
-    margin-top: 60px; /* Margen para evitar solapamiento con el header fijo */
+    margin-top: 60px; /* Espacio para no solapar con el header */
 }
 
 .media {
-    background-color: #eee; /* Un fondo más claro para resaltar el área */
+    background-color: #F0F0F0; /* Gris claro para áreas de contenido destacadas */
 }
 
 .review {
-    background-color: #fff;
+    background-color: #FFFFFF; /* Fondo blanco para las reseñas */
     border: 1px solid #ddd;
     padding: 10px;
     margin: 5px;
-    text-align: center; /* Alineación del texto */
+    text-align: center;
     flex: 1;
+    color: #333333; /* Texto gris oscuro para fácil lectura */
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #007BFF; /* Azul Eléctrico para el pie de página */
+    color: #FFFFFF;
     text-align: center;
     padding: 20px;
     position: relative;
@@ -74,10 +46,10 @@ footer {
 }
 
 footer button {
-    background-color: #008000; /* Color verde para llamar la atención */
-    color: white;
+    background-color: #32CD32; /* Verde Lima para el botón */
+    color: #FFFFFF;
     border: none;
     padding: 15px 30px;
-    font-size: 18px; /* Tamaño de fuente más grande */
+    font-size: 18px;
     cursor: pointer;
 }

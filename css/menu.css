@@ -1,28 +1,27 @@
 /* menu.css */
 .sidebar {
     height: 100%;
-    width: 0; /* start out as 0 width */
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #FF4500; /* Naranja Brillante para el fondo del menú lateral */
     overflow-x: hidden;
-    transition: 0.5s; /* smooth transition effect */
-    padding-top: 60px; /* add some top padding for aesthetics */
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
 .sidebar a {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #FFFFFF; /* Texto blanco para contraste */
     display: block;
-    transition: 0.3s;
 }
 
 .sidebar a:hover {
-    color: #f1f1f1;
+    color: #32CD32; /* Verde Lima para hover */
 }
 
 .sidebar .closebtn {
@@ -30,5 +29,5 @@
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    color: #FFFFFF; /* Texto blanco para el botón de cierre */
 }

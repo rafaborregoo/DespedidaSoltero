@@ -6,27 +6,29 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/reviews.css">
 </head>
 <body>
     <header>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-        <h1>TodoDespedidas</h1>
+        <!-- Ícono del menú alineado a la izquierda -->
+        <span style="font-size:30px; cursor:pointer" onclick="openNav()" id="menuIcon">&#9776;</span>
+        <h1 style="display: inline;">TodoDespedidas</h1>
     </header>
+    <!-- Aquí se cargará el menú lateral -->
+    <div id="menuContainer"></div>
     <section class="media">
         <p>Videos o imágenes de fiestas de despedidas, actividades, etc.</p>
     </section>
     <section class="description">
         <p>Descripción de lo que ofrecemos y cómo pueden ahorrar tiempo y dinero con nosotros.</p>
     </section>
-    <div class="reviews">
-        <div class="review">Comentarios y reseñas</div>
-        <div class="review">Comentarios y reseñas</div>
-        <div class="review">Comentarios y reseñas</div>
-    </div>
+    <!-- Inclusión del carrusel de reseñas -->
+    <div id="reviewContainer"></div>
     <footer>
         <button type="button">Organiza en 10 minutos la despedida de tu amigo o familiar</button>
     </footer>
     <script src="js/main.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/reviews.js"></script> <!-- Archivo de script para controlar las reseñas -->
 </body>
 </html>
